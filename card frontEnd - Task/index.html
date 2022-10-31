@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@200&family=Space+Grotesk:wght@500&family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left_side">
+        <div class="cards">
+          <div class="front_side_card">
+            <img class="card_logo" src="./images/card-logo.svg" />
+            <div class="front_side_card_container">
+              <img src="./images/bg-card-front.png" />
+              <h1 class="card_number">0000 0000 0000 0000</h1>
+              <div class="card_detail">
+                <span class="name">Karthick</span>
+                <div class="card_detail_date">
+                  <span class="month">00</span>/<span class="year">00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="back_side_card">
+            <img src="./images/bg-card-back.png" />
+          </div>
+        </div>
+      </div>
+      <div class="right_side">
+        <form>
+          <div class="input">
+            <label for="card_name">Cardholder Name</label>
+            <input
+              type="text"
+              placeholder="e.g. Karthick V"
+              id="card_name"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="card_num">Card Number</label>
+            <input
+              type="number"
+              minlength="16"
+              maxlength="16"
+              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              placeholder="e.g. 1234 5678 9123 0000"
+              id="card_num"
+              required
+            />
+          </div>
+          <div class="card_details">
+            <div class="card_expiry">
+              <label for="exp">EXP.DATE [MM/YY]</label>
+              <div class="card_expiry_date">
+                <div>
+                  <input
+                    type="number"
+                    minlength="2"
+                    maxlength="2"
+                    oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    placeholder="MM"
+                    id="card_month"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    minlength="2"
+                    maxlength="2"
+                    oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    id="card_year"
+                    placeholder="YY"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card_cvc">
+              <label for="card_cvc">CVC</label>
+              <input
+                type="number"
+                oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength="3"
+                placeholder="e.g. 123"
+                id="cvc"
+              />
+            </div>
+          </div>
+          <button class="submitBtn">Confirm</button>
+        </form>
+      </div>
+      <div class="thank hidden">
+        <img src="./images/icon-complete.svg" alt="Completed" />
+        <h1>THANK YOU!</h1>
+        <p>We've added your card details</p>
+        <button>Continue</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
