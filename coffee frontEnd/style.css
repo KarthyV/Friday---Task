@@ -1,0 +1,386 @@
+main {
+  margin: 0 80px;
+}
+
+.desktop {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.desktop > h1 {
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.main-banner {
+  background-image: url("https://coffeeroasters-subscription-site-zeta.vercel.app/assets/home/tablet/image-hero-coffeepress.jpg");
+  color: white;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-origin: border-box;
+  border-radius: 8px;
+  padding: 6rem;
+}
+
+.main-banner > h1 {
+  font-size: 40px;
+  font-weight: 900;
+
+  width: 80%;
+}
+
+.main-banner > p {
+  width: 80%;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+.main-banner > button {
+  width: fit-content;
+
+  background-color: #0e8784;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.our-collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.each-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+
+.each-product > .product-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.each-product > img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 150px;
+}
+
+.why-container {
+  background-color: #2c343e;
+  color: white;
+  text-align: center;
+  padding: 3.5rem;
+  border-radius: 8px;
+  height: 68%;
+  margin-top: 3rem;
+}
+
+.why-container > .why-description {
+  font-size: 0.9rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 15px;
+  margin: 0 40px;
+}
+
+.feature-in {
+  background-color: #0e8784;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  /* width: 180px; */
+}
+
+.feature-in > .icon {
+  font-size: 4rem;
+  color: rgb(109, 100, 49);
+}
+
+footer {
+  background-color: #2c343e;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+  padding: 3rem 1rem;
+  font-size: 1.1rem;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+
+.footer-title {
+  font-size: 2.2rem;
+  flex: 1;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 20px;
+  letter-spacing: 2px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+  justify-content: center;
+}
+
+.about_line,
+.plan_line,
+.home_line {
+  text-decoration: none;
+  color: black;
+}
+
+.about_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about1 {
+  background-image: url("https://t3.ftcdn.net/jpg/03/15/40/34/360_F_315403482_MVo1gSOOfvwCwhLZ9hfVSB4MZuQilNrx.jpg");
+
+  color: #fff;
+  padding: 5rem 3rem;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about1 > p {
+  width: 50%;
+}
+
+.about2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 4rem;
+  width: 100%;
+}
+
+.about2-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+.about2-image > img {
+  max-width: 450px;
+}
+
+.about3 {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 4rem;
+  background-color: #2c343e;
+  border-radius: 8px;
+}
+
+.about3-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  color: #fff;
+}
+
+.about3-image > img {
+  max-width: 450px;
+}
+
+.main-list {
+  background-color: #2c343e;
+  color: white;
+  display: flex;
+  padding: 3.5rem 6rem;
+  gap: 5rem;
+  border-radius: 8px;
+}
+
+.list > h1 {
+  color: rgb(203, 157, 102);
+}
+
+.user_feed {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+
+.user_feed1 {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+
+.user_feed1 > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.options_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.option_container {
+  background-color: whitesmoke;
+  color: black;
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.option_container:hover {
+  background-color: #0e8784;
+  color: white;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media (max-width: 660px) {
+  main {
+    margin: 0 25px;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-view {
+    display: inline;
+    font-size: 1.4rem;
+    position: relative;
+  }
+
+  .mobile-nav {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: -120px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    padding: 1rem;
+    gap: 20px;
+  }
+  .mobile-nav > li {
+    cursor: pointer;
+  }
+  .main-banner {
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-repeat: no-repeat;
+  }
+
+  .our-collection {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 2rem;
+  }
+  .each-product {
+    flex: 1;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+  }
+
+  .each-product > .product-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .each-product > img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 180px;
+  }
+  .why-container {
+    padding: 1rem;
+  }
+  .features {
+    flex-direction: column;
+  }
+  footer {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  .footer-menu {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+  }
+  .about2-content > h1 {
+    text-align: center;
+  }
+
+  .about3 {
+    flex-direction: column;
+  }
+
+  .about3-image > img {
+    width: 100%;
+  }
+  .main-list {
+    flex-direction: column;
+    padding: 1.7rem 3rem;
+    gap: 3rem;
+  }
+  .list {
+    text-align: center;
+  }
+  .list > h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .options_container {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .option_container {
+    padding: 1.5rem;
+  }
+}
+.hidden {
+  display: none;
+}
