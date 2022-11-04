@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Kumbh+Sans:wght@400;700&family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="mobile-view hidden">
+        <button class="nav_menuClose">
+          <img src="./images/icon-close.svg" />
+        </button>
+        <div class="mobile_menu">
+          <p class="menu_option">Collections</p>
+          <p class="menu_option">Men</p>
+          <p class="menu_option">Women</p>
+          <p class="menu_option">About</p>
+          <p class="menu_option">Contact</p>
+        </div>
+      </nav>
+      <nav class="desktop-view">
+        <button class="nav_menuBtn">
+          <img src="./images/icon-menu.svg" />
+        </button>
+        <div class="brand_name_title"><h1>sneakers</h1></div>
+        <div class="desktop_menu">
+          <span class="menu_option">Collections</span>
+          <span class="menu_option">Men</span>
+          <span class="menu_option">Women</span>
+          <span class="menu_option">About</span>
+          <span class="menu_option">Contact</span>
+        </div>
+        <div class="desktop_nav_end">
+          <div class="nav_end_cart"><img src="./images/icon-cart.svg" /></div>
+          <div class="nav_end_avatar">
+            <img src="./images/image-avatar.png" />
+          </div>
+          <div class="cart hidden">
+            <h6 class="cart-header">Cart</h6>
+            <hr />
+            <p class="cart-p">Your cart is empty.</p>
+            <div class="cart-inside hidden">
+              <img
+                class="cart-img"
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+              <p class="cart-prod">Fall Limited Edition Sneakers</p>
+              <button class="cart-del">
+                <img src="images/icon-delete.svg" alt="" />
+              </button>
+              <p class="cart-prod price-cal"></p>
+              <span class="total-price"></span>
+              <button class="checkOut-btn">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="main_content">
+        <div class="left_content">
+          <img
+            class="left_content_mainImg"
+            src="./images/image-product-1.jpg"
+          />
+          <img src="./images/icon-previous.svg" class="img_prev" />
+          <img src="./images/icon-next.svg" class="img_next" />
+          <div class="images_thumb">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              class="thumb2"
+              alt=""
+            /><img
+              src="./images/image-product-2-thumbnail.jpg"
+              class="thumb3"
+              alt=""
+            /><img
+              src="./images/image-product-3-thumbnail.jpg"
+              class="thumb3"
+              alt=""
+            /><img
+              src="./images/image-product-4-thumbnail.jpg"
+              class="thumb4"
+              alt="./images/image-product-1-thumbnail.jpg"
+            />
+          </div>
+        </div>
+        <div class="right_content">
+          <h5 class="righSide_comp">Sneaker Company</h5>
+          <h1 class="rightSide_limit">Fall Limited Edition Sneakers</h1>
+          <p class="rightSide_desc">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <h3 class="price">$125.00</h3>
+          <h6 class="discount">50%</h6>
+          <p class="oldPrice">$250.00</p>
+          <div class="buy-container">
+            <button class="btn">
+              <div class="minus">
+                <img src="images/icon-minus.svg" alt="" />
+              </div>
+              <span class="amount">0</span>
+              <div class="plus">
+                <img src="images/icon-plus.svg" alt="" />
+              </div>
+            </button>
+            <button class="buy-btn">
+              <img class="btn-img" src="images/icon-cart-white.svg" alt="" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/310f50a5f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
