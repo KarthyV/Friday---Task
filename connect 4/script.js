@@ -8,6 +8,7 @@ var gameBoard;
 
 var rows = 6;
 var columns = 7;
+var currColumns = [5, 5, 5, 5, 5, 5, 5];
 
 resetGame();
 
@@ -37,7 +38,14 @@ function setTile() {
 
   let selectedTile = this;
   let [selectedRow, selectedCol] = selectedTile.id.split("-").map(Number);
+
+  selectedRow = currColumns[selectedCol];
+  if (selectedRow < 0) {
+    return;
+  }
+
   board[selectedRow][selectedCol] = curPlayer;
+  selectedTile = document.getElementById(`${selectedRow}-${selectedCol}`);
   if (curPlayer == playerRed) {
     selectedTile.classList.add("red");
     curPlayer = playerYellow;
@@ -45,4 +53,7 @@ function setTile() {
     selectedTile.classList.add("yellow");
     curPlayer = playerRed;
   }
+  selectedRow -= 1;
+  currColumns[selectedCol] = selectedRow;
+  console.log(board);
 }
